@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="bootstrap.js"></script>
+        <link href="assets/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <noscript
+            >This page contains webassembly and javascript content, please
+            enable javascript in your browser.</noscript
+        >
+        <canvas id="demo-canvas"></canvas>
+        <div id="history"></div>
+        <section id="control-bar">
+            <select id="mode">
+                <option value="wasm-to-js">WASM → JS</option>
+                <option value="wasm-only">WASM → WASM</option>
+                <option value="js-only">JS → JS</option>
+            </select>
+            <button id="play-pause">Play</button>
+            <div id="fps"></div>
+        </section>
+    </body>
+</html>
